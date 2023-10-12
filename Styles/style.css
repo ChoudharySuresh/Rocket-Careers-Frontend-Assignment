@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 :root{
     --primary-color:#2F1893;
     --learn-more-btn :#E93A7D;
@@ -13,19 +12,67 @@
     --twitter-bg:#1DA1F2;
     --checked-bg:#25DAC5;
     --text-color:rgba(21, 20, 57, 0.4);
+    --grey-color: grey;
+    --sign-up-heading:#1E0E62;
 }
-
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 body{
     background-color: var(--primary-color);
     font-family: 'DM Sans', sans-serif;
 }
 .hero-section{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-    margin: 2.5rem 0;
+    width: 60.8rem;
+    margin: 4.5rem auto;
 }
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60.8rem;
+    margin:2rem auto;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.nav li a{
+    font-size: 1.18rem;
+    font-weight: 500;
+    line-height: 1.65rem;
+    color: var(--white-color);
+}
+.nav li:first-child a{
+    color: var(--grey-color);
+}
+.purchase-btn{
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 1.18rem;
+    font-weight: 500;
+    line-height: 1.65rem;
+    color: var(--white-color);
+    background-color: var(--learn-more-btn);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6.3rem;
+}
+
 .Startup-info{
     width: 25rem;
     color:var(--white-color);
@@ -48,10 +95,11 @@ body{
     background-color: var(--learn-more-btn);
     padding:1rem;
     border: none;
-    outline: none;
     border-radius: 6.3rem;
     color: var(--white-color);
     font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.65rem;
 }
 
 .sign-up-container{
@@ -74,7 +122,8 @@ body{
     font-weight: 700;
     line-height: 3.3rem;
     text-align: center;
-    margin: 1rem 0;
+    margin: 2.5rem 0 1rem 0;
+    color: var(--sign-up-heading);
 }
 .input-box{
     width: 20.65rem;
@@ -112,12 +161,13 @@ input[type="checkbox"]{
 .sign-in-btn{
     width: 20.65rem;
     font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.65rem;
     padding: 0.7rem 1rem;
     border-radius: 100px;
     background-color: var(--sign-in-bg);
     color: var(--white-color);
     border: none;
-    outline: none;
     margin: 0.5rem 0;
 }
 .divider-container{
